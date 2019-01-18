@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Europe Travels</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_landmarks">Landmarks</string>
+    <string name="category_history">History</string>
+    <string name="category_dining">Dining</string>
+    <string name="category_activities">Activities</string>
+    <string name="louvre_museum">This museum holds enough paintings that you will have to spend multiple days even if you spent only 3 seconds per painting! It also houses the Mona Lisa painting.</string>
+    <string name="swiss_tunnels">The mountains and tunnels gives Switzerland great control of what goes in and out of the country.  Major transportation paths such as the tunnels, highways, or railways are rigged with explosives in the scenario that they are attacked by invaders.</string>
+    <string name="notre_dame">A medieval Catholic church in Paris, and acts as the geographical center of Paris.</string>
+</resources>
