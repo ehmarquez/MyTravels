@@ -28,9 +28,9 @@ public class LandmarksFragment extends android.support.v4.app.Fragment {
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Switzerland - Swiss Alps", R.string.swiss_alps, R.drawable.swiss_alps));
-        locations.add(new Location("Paris, France - Eiffel Tower", R.string.eiffel_tower, R.drawable.eiffel_tower));
-        locations.add(new Location("Vatican City", R.string.vatican_city, R.drawable.vatican_city));
+        locations.add(new Location(getString(R.string.swiss_alps), R.string.swiss_alps_desc, R.drawable.swiss_alps));
+        locations.add(new Location(getString(R.string.eiffel_tower), R.string.eiffel_tower_desc, R.drawable.eiffel_tower));
+        locations.add(new Location(getString(R.string.vatican_city), R.string.vatican_city_desc, R.drawable.vatican_city));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.

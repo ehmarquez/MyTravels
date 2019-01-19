@@ -1,7 +1,5 @@
 package com.example.alvin.mytravels;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -30,8 +28,8 @@ public class DiningFragment extends android.support.v4.app.Fragment {
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Venice, Italy - Trattoria Al Gazzettino", R.string.venice_restaurant));
-        locations.add(new Location("Munich, Germany - Zum Augustiner", R.string.munich_restaurant));
+        locations.add(new Location(getString(R.string.venice_restaurant), R.string.venice_restaurant_desc));
+        locations.add(new Location(getString(R.string.munich_restaurant), R.string.munich_restaurant_desc));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
