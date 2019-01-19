@@ -30,9 +30,8 @@ public class DiningFragment extends android.support.v4.app.Fragment {
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Venice, Italy - Trattoria Al Gazzettino", R.string.louvre_museum));
-        locations.add(new Location("Switzerland - Tunnels", R.string.swiss_tunnels));
-        locations.add(new Location("Paris, France - Notre Dame", R.string.notre_dame));
+        locations.add(new Location("Venice, Italy - Trattoria Al Gazzettino", R.string.venice_restaurant));
+        locations.add(new Location("Munich, Germany - Zum Augustiner", R.string.munich_restaurant));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
@@ -46,7 +45,6 @@ public class DiningFragment extends android.support.v4.app.Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
-        // Inflate
         return rootView;
     }
 }

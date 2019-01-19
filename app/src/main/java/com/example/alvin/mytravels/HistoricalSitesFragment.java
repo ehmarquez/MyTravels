@@ -1,7 +1,5 @@
 package com.example.alvin.mytravels;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -46,7 +44,6 @@ public class HistoricalSitesFragment extends android.support.v4.app.Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
-        // Inflate
         return rootView;
 
     }

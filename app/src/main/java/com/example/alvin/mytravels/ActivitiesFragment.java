@@ -19,19 +19,19 @@ public class ActivitiesFragment extends android.support.v4.app.Fragment {
         // Required empty public constructor
     }
 
-   @Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       // Inflate the layout for this fragment
+        // Inflate the layout for this fragment
 
-       View rootView = inflater.inflate(R.layout.location_list, container, false);
+        View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("France - Louvre Painting", R.string.louvre_museum));
-        locations.add(new Location("Switzerland - Tunnels", R.string.swiss_tunnels));
-        locations.add(new Location("France - Notre Dame", R.string.notre_dame));
+        locations.add(new Location("Switzerland - Jungfraujoch", R.string.swiss_jungfraujoch));
+        locations.add(new Location("France - Montmarte Walking Tour", R.string.montmarte_tour));
+        locations.add(new Location("Italy - Rome Walking Tour", R.string.rome_tour));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
@@ -45,7 +45,6 @@ public class ActivitiesFragment extends android.support.v4.app.Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
-        // Inflate
-       return rootView;
-   }
+        return rootView;
+    }
 }
