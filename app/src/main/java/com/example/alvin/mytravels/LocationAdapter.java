@@ -12,9 +12,6 @@ import java.util.ArrayList;
 
 public class LocationAdapter extends ArrayAdapter<Location> {
 
-    //Private member variables
-    private int mColorResourceId;
-
     /**
      * Constructor to hold a list of multiple locations
      *
