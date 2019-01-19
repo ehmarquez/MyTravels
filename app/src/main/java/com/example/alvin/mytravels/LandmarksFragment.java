@@ -1,7 +1,5 @@
 package com.example.alvin.mytravels;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -30,15 +28,15 @@ public class LandmarksFragment extends android.support.v4.app.Fragment {
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Switzerland - Swiss Alps", R.string.louvre_museum, R.drawable.swiss_alps));
-        locations.add(new Location("Paris, France - Eiffel Tower", R.string.swiss_tunnels));
-        locations.add(new Location("Vatican City", R.string.notre_dame));
+        locations.add(new Location(getString(R.string.swiss_alps), R.string.swiss_alps_desc, R.drawable.swiss_alps));
+        locations.add(new Location(getString(R.string.eiffel_tower), R.string.eiffel_tower_desc, R.drawable.eiffel_tower));
+        locations.add(new Location(getString(R.string.vatican_city), R.string.vatican_city_desc, R.drawable.vatican_city));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
          *
          */
-        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_landmarks);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         /**
          *  Find listview in location_list xml and fill it with the adapter.
@@ -46,7 +44,6 @@ public class LandmarksFragment extends android.support.v4.app.Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
-        // Inflate
         return rootView;
     }
 }
