@@ -28,9 +28,9 @@ public class HistoricalSitesFragment extends android.support.v4.app.Fragment {
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Paris, France - Notre Dame", R.string.notre_dame));
-        locations.add(new Location("Paris, France - Louvre Painting", R.string.louvre_museum));
-        locations.add(new Location("Switzerland - Military Defense", R.string.swiss_tunnels));
+        locations.add(new Location(getString(R.string.notre_dame), R.string.notre_dame_desc));
+        locations.add(new Location(getString(R.string.louvre_museum), R.string.louvre_museum_desc));
+        locations.add(new Location(getString(R.string.swiss_defense), R.string.swiss_defense_desc));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.

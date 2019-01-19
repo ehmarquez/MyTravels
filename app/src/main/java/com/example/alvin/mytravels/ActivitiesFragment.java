@@ -29,9 +29,9 @@ public class ActivitiesFragment extends android.support.v4.app.Fragment {
         // Create list of Locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Switzerland - Jungfraujoch", R.string.swiss_jungfraujoch));
-        locations.add(new Location("France - Montmarte Walking Tour", R.string.montmarte_tour));
-        locations.add(new Location("Italy - Rome Walking Tour", R.string.rome_tour));
+        locations.add(new Location(getString(R.string.swiss_jungfraujoch), R.string.swiss_jungfraujoch_desc));
+        locations.add(new Location(getString(R.string.montmartre_tour), R.string.montmartre_tour_desc));
+        locations.add(new Location(getString(R.string.rome_tour), R.string.rome_tour_desc));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
