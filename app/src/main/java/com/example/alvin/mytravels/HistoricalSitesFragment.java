@@ -38,7 +38,7 @@ public class HistoricalSitesFragment extends android.support.v4.app.Fragment {
          * Create {@link LocationAdapter} containing list of {@link Location}s.
          *
          */
-        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_history);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         /**
          *  Find listview in location_list xml and fill it with the adapter.
