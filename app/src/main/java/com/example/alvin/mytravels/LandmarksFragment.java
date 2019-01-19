@@ -31,14 +31,14 @@ public class LandmarksFragment extends android.support.v4.app.Fragment {
         final ArrayList<Location> locations = new ArrayList<Location>();
 
         locations.add(new Location("Switzerland - Swiss Alps", R.string.louvre_museum, R.drawable.swiss_alps));
-        locations.add(new Location("blah", R.string.swiss_tunnels));
-        locations.add(new Location("France - Notre Dame", R.string.notre_dame));
+        locations.add(new Location("Paris, France - Eiffel Tower", R.string.swiss_tunnels));
+        locations.add(new Location("Vatican City", R.string.notre_dame));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
          *
          */
-        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_history);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_landmarks);
 
         /**
          *  Find listview in location_list xml and fill it with the adapter.

@@ -32,7 +32,7 @@ public class HistoricalSitesFragment extends android.support.v4.app.Fragment {
 
         locations.add(new Location("Paris, France - Notre Dame", R.string.notre_dame));
         locations.add(new Location("Paris, France - Louvre Painting", R.string.louvre_museum));
-        locations.add(new Location("Switzerland - Military Neutrality", R.string.swiss_tunnels));
+        locations.add(new Location("Switzerland - Military Defense", R.string.swiss_tunnels));
 
         /**
          * Create {@link LocationAdapter} containing list of {@link Location}s.
