@@ -17,7 +17,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
      *
      * @param context         Current context used to inflate the layout file
      * @param locations       List of {@link Location} objects to display
-     * @param colorResourceId Color for each category
      */
     public LocationAdapter(Activity context, ArrayList<Location> locations) {
         //Call parent class super
